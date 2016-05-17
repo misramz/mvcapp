@@ -14,24 +14,33 @@ export class AppController {
   formSubmit(){
     this.contactForm.on('submit',(event) => {
       event.preventDefault();
-      console.log('form submit');
+
 
       let form = this.contactForm;
 
       let name = form.children('.name').val();
+      let address = form.children('.address').val();
+      let number = form.children('.number').val();
+      let photoURL = form.children('.photoURL').val();
 
+      let contact = new Contact (name, address, number, photoURL);
 
+      let html = this.appendTemplate(contact);
 
+      this.contactList.append(html);
 
-      let contact = new contact (name, address....);
+      form.children('input').val('');
 
-      contact {
-        name: '...'
-      }
-
-      
-
-
-    })
+    });
   }
-}
+
+
+    // apply input to my list area
+    appendTemplate(contact) {
+      return ` <li class='contactCard'>
+          <h3> ${contact.name}</h3>
+          <h3> ${contact.address}</h3>
+          <h3> ${contact.number}</h3>
+          <img src='${contact.photoURL}'>
+          </li>`;}
+  }

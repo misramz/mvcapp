@@ -1,9 +1,9 @@
 // create a contact model
 export class Contact{
   // contructior
-  constructor(name,photoURL,address,number) {
+  constructor(name,address,number,photoURL) {
   this.name      = name;
-  this.photoURL  = photoURL;
   this.address   = address;
   this.number    = number;
+  this.photoURL  = photoURL;
 }}
