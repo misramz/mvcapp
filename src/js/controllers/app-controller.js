@@ -22,7 +22,6 @@ export class AppController {
       let address = form.children('.address').val();
       let number = form.children('.number').val();
       let photoURL = form.children('.photoURL').val();
-
       let contact = new Contact (name, address, number, photoURL);
 
       let html = this.appendTemplate(contact);
