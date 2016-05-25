@@ -9,5 +9,3 @@ let contactList = $('.people');
 let app = new AppController (contactForm, contactList);
 
 app.init();
-
- 

@@ -6,5 +6,5 @@ export class Contact{
   this.address   = address;
   this.number    = number;
   this.photoURL  = photoURL;
-  this.list =[];
+  //this.list =[];
 }}

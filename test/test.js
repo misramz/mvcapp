@@ -9,7 +9,7 @@ const expect = chai.expect;
 const should = chai.should();
 const assert = chai.assert;
 
-describe('Something We Want To Test', function () {
+describe('Testing our Contacts', function () {
 
   describe('Testing the Creation of Something', function () {
 
