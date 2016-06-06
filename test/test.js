@@ -11,17 +11,17 @@ const assert = chai.assert;
 
 describe('Testing our Contacts', function () {
 
-  let Contacts;
+  let Contact;
 
   beforeEach(function () {
-    contacts = new ContactList()
+    contact = new Contact()
   })
 
   describe('Testing the Creation of Something', function () {
 
     it('should exist after we create it', function () {
-      let contacts = new ContactList;
-      expect(x).to.be.an.instanceof(ContactList);
+      let contact = new Contact;
+      expect(contact).to.be.an.instanceof(Contact);
     });
 
   });
