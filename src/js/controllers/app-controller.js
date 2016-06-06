@@ -8,7 +8,7 @@ export class AppController {
     this.contactForm = contactForm;
     this.contactList = contactList;
   }
-
+console.log(contactForm);
   init() {
     this.formSubmit();
     this.deleteButton();
