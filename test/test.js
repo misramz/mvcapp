@@ -11,7 +11,7 @@ const assert = chai.assert;
 
 describe('Testing our Contacts', function () {
 
-  let Contact;
+  let Contact;  
 
   beforeEach(function () {
     contact = new Contact()
