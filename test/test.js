@@ -1,27 +1,28 @@
-// Import Chai
+
 import chai from 'chai';
 
 // Import Any Files to Test
-import '../src/js/main';
+import { Contact } from '../src/js/models/contact';
+import { AppController } from '../src/js/controllers/app-controller';
 
 // Set Chai Constants
 const expect = chai.expect;
 const should = chai.should();
 const assert = chai.assert;
 
-describe('Testing our Contacts', function () {
+describe('Testing our Contacts Class', function () {
 
-  let Contact;  
-
-  beforeEach(function () {
-    contact = new Contact()
-  })
 
   describe('Testing the Creation of Something', function () {
 
-    it('should exist after we create it', function () {
-      let contact = new Contact;
+    it('should be an instance of a new contact when created', function () {
+      let contact = new Contact();
       expect(contact).to.be.an.instanceof(Contact);
+    });
+
+    it('should be an instance of an application controller when created', function () {
+      let app = new AppController();
+      expect(app).to.be.an.instanceof(AppController);
     });
 
   });
